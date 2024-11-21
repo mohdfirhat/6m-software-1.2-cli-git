@@ -1,8 +1,61 @@
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet" />
+        <title>Firhat Portfolio</title>
+      </head>
     <body>
-        <!-- Add Code Here -->
+        <header>
+            <div class="title-container">
+              <h1 class="title">Firhat Portfolio</h1>
+            </div>
+            <ul class="nav-list">
+              <li class="navbtn"><a href="#about-me">About Me</a></li>
+              <li class="navbtn"><a href="#hobbies">Hobbies</a></li>
+            </ul>
+          </header>
+          <h2 id="about-me">About Me</h2>
+        <div class="about-me-container" >
+            <div class="about-me-img-container">
+              <img src="./assets/pic-firhat.jpg" alt="Image of Firhat" />
+            </div>
+    
+            <div class="about-me-text-wrapper">
+              <h3 class="intro-text1">Full-Stack Web Developer 👋</h3>
+              <h3 class="intro-text2">using <span class="ityped"></span></h3>
+              <p class="intro-text3">
+                Hi, I'm Firhat. A passionate Full-Stack Developer based in
+                Singapore 🇸🇬. I love creating and solving problems which coding has plenty of. I believe that of you work on something you are passionate about, you would not be working for the rest of your life.
+              </p>
+              <div class="about-me-contact-container">
+                <a href="https://github.com/mohdfirhat" target="_blank">
+                    <img src="./assets/square-github.svg" alt="GitHub image" />
+                </a>
+              </div>
+            </div>
+        </div>
+        <h2 id="hobbies">Hobbies</h2>
+        <div class="hobbies-container">
+          <ul class="hobbies-list">
+            <li>Gym</li>
+            <li>Travel</li>
+            <li>Gaming</li>
+          </ul>
+        </div>
+        <!-- Used ityped npm packaged for this project. Source: https://www.npmjs.com/package/ityped -->
+        <script src="./ityped.js"></script>
+        <script>
+        window.ityped.init(document.querySelector(".ityped"), {
+            strings: ["HTML CSS  JavaScript", "ReactJs  TailwindCSS  TypeScript"],
+            backDelay: 1000,
+        });
+        </script>
     </body>
 </html>
